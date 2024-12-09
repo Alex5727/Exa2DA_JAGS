@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Exa2DA_JAGS.Vistas.Page1">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label Text="Frecuencia Cardiaca"/>
+
+
+            <Label Text="Ingrese los latidos detectados en 15 segundos:"/>
+            <Entry Placeholder="Latidos"  Text="{Binding Cantidad}" Keyboard="Numeric"/>
+
+            <Button Command="{Binding CalcularCommand}" Text="Calcular" TextColor="Black"/>
+
+            <Label Text="Tu frecuencia cardiaca es:" />
+
+            <Label Text="{Binding Can}"/>
+            <Label Text="{Binding Frecuencia}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
